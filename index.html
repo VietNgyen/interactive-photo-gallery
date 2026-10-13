@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="gallery.js"></script>
+</head>
+<body>
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div class="thumbnails">
+        <img class="preview" alt="Cute dog in the park" src="https://picsum.photos/id/1025/600/400" 
+             onmouseover="upDate(this)" onmouseout="unDo()">
+
+        <img class="preview" alt="Foggy mountain landscape" src="https://picsum.photos/id/1069/600/400" 
+             onmouseover="upDate(this)" onmouseout="unDo()">
+
+        <img class="preview" alt="Peaceful puppy resting" src="https://picsum.photos/id/1062/600/400" 
+             onmouseover="upDate(this)" onmouseout="unDo()">
+    </div>
+
+</body>
+</html>
