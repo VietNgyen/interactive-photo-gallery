@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Photo Gallery</title>
+    <title>Accessible Interactive Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
     <script src="gallery.js"></script>
 </head>
-<body>
+<body onload="setGallery()">
+
+    <h1>Accessible Interactive Photo Gallery</h1>
+
     <div id="image">
         Hover over an image below to display here.
     </div>
 
     <div class="thumbnails">
-        <img class="preview" alt="Cute dog in the park" src="https://picsum.photos/id/1025/600/400" 
-             onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Playful dog in a green field" src="https://picsum.photos/id/1025/600/400"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
 
-        <img class="preview" alt="Foggy mountain landscape" src="https://picsum.photos/id/1069/600/400" 
-             onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Puppy resting comfortably outdoors" src="https://picsum.photos/id/1062/600/400"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
 
-        <img class="preview" alt="Peaceful puppy resting" src="https://picsum.photos/id/1062/600/400" 
-             onmouseover="upDate(this)" onmouseout="unDo()">
+        <img class="preview" alt="Majestic mountains shrouded in fog" src="https://picsum.photos/id/1069/600/400"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+        <img class="preview" alt="Sunlight shining through deep forest trees" src="https://picsum.photos/id/1074/600/400"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+        <img class="preview" alt="Alert black puppy looking closely" src="https://picsum.photos/id/237/600/400"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+        <img class="preview" alt="Calm sea waves on a sunny shoreline" src="https://picsum.photos/id/1084/600/400"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
     </div>
 
 </body>
